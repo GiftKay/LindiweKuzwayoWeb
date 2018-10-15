@@ -6,7 +6,7 @@ $primary:  #f4c706;
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
 }
-@font-face {
+@font-face {  
   font-family: 'blpu';
   src: url('../fonts/Beautiful-Lovers-Personal-Use.ttf') format('truetype');
 }
@@ -37,6 +37,7 @@ $navbar-dark-hover-color:           rgba(244, 199, 6, .75) !default;
 $navbar-dark-active-color:          rgba(244, 199, 6, 1) !default;
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+
 body
 {
   color:#00000088;
@@ -44,6 +45,7 @@ body
   h1,h2,h3,h4,h5,h6
   {
     font-family: blpu;
+    color: $primary;
   }
 }
 .bg-black
@@ -57,7 +59,14 @@ body
 .navbar
 {
   text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
 
+  a
+  {
+    font-size: 16px;
+  }
+  
   #logo
   {
     width:80px;
@@ -89,8 +98,11 @@ body
      }
 
     }
-
-
+    
+  }
+  .carousel-caption
+  {
+    h1{ font-size: 150px;}
   }
 
   .navbar-toggler
@@ -110,3 +122,7 @@ body
 }  
 }
 
+.none_class
+{
+  color:#000;
+}
