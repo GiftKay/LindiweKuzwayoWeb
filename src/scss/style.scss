@@ -1,0 +1,83 @@
+
+$bg-body:#eee;
+$primary:  #f4c706;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+$font-family-base: Montserrat;
+$navbar-dark-color:                 rgba(244, 199, 6, .5) !default;
+$navbar-dark-hover-color:           rgba(244, 199, 6, .75) !default;
+$navbar-dark-active-color:          rgba(244, 199, 6, 1) !default;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+body
+{
+  color:#00000088;
+}
+.bg-black
+{
+  background:rgba(0, 0, 0, .85);
+}
+.container-fluid
+{
+  min-height: 100vh;
+ 
+.navbar
+{
+  text-transform: uppercase;
+
+  #logo
+  {
+    width:80px;
+    height: 100%;
+    color: #f4c706;
+
+    #logoMobile
+    {
+      display: none;
+    }
+
+    #logoImg
+    {
+      display: inline-block;
+      width:35px;
+    }
+    
+    @media (max-width: 768px) 
+    {
+     text-align: center;
+     #logoMobile
+     {
+      display: inline-block;
+     }
+
+     #logoImg
+     {
+       display: none;
+     }
+
+    }
+
+
+  }
+
+  .navbar-toggler
+  {
+    border-color: transparent;
+    
+    .navbar-toggler-icon 
+    {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(244, 199, 6,.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+    }
+  }
+  .nav-item 
+  {
+    padding-left:15px;
+    padding-right:15px;
+  }
+}  
+}
+
